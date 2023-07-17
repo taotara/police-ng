@@ -1,1 +1,149 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+/* ----ROOT VARIABLES---- */
+:root {
+  --color-primary: #383167;
+  --color-secondary: #026606;
+  --color-secondary-logo: #026606;
+  --color-tertiary: #fefd0d;
+  --color-danger: #c80707;
+  --color-success: #d5ffd6;
+  --color-warning: #ffe6e6;
+  --color-white: #fff;
+  --color-info-dark: #7d8da1;
+  --color-info-light: #dce1eb;
+  --color-dark: #363949;
+  --color-light: rgba(132, 139, 200, 0.18);
+  --color-primary-variant: #383167;
+  --color-dark-variant: #677483;
+  --color-background: #f6f6f6;
+  --card-padding: 1.8rem;
+  --padding-1: 1.2rem;
+  --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+/* ----Dark Theme Variables---- */
+.dark-theme-variables {
+  --color-background: #181a1e;
+  --color-secondary-logo: #fefd0d;
+  --color-white: #202528;
+  --color-dark: #edeffd;
+  --color-dark-variant: #a3bdcc;
+  --color-light: rgba(0, 0, 0, 0.4);
+  --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: transparent;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 14px; */
+}
+
+body {
+  font-family: poppins, sans-serif;
+  font-size: 1rem;
+  background: var(--color-background);
+  color: var(--color-dark);
+  position: relative;
+}
+
+a {
+  color: var(--color-dark);
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.space {
+  height: 5rem;
+}
+
+.spaceL {
+  margin-top: 4.2rem;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+  /* font-weight: 500; */
+}
+
+h3 {
+  font-size: 0.87rem;
+}
+
+h4 {
+  font-size: 0.8rem;
+}
+
+h5 {
+  font-size: 0.77rem;
+}
+
+small {
+  font-size: 0.75rem;
+}
+
+form,
+input,
+select {
+  font-family: poppins, sans-serif;
+  color: var(--color-dark);
+}
+
+.profile-photo {
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 50%;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.text-muted {
+  color: var(--color-info-dark) !important;
+}
+
+p {
+  color: var(--color-dark-variant);
+}
+
+b {
+  color: var(--color-dar);
+}
+
+.primary {
+  color: var(--color-primary);
+}
+
+.secondary {
+  color: var(--color-secondary);
+}
+
+.danger {
+  color: var(--color-danger);
+}
+
+.success {
+  color: var(--color-success);
+}
+
+.warning {
+  color: var(--color-warning);
+}

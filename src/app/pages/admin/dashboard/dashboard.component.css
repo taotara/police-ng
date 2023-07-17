@@ -1,0 +1,26 @@
+aside {
+  height: 100vh;
+  background-color: red;
+  width: 350px;
+  font-size: 4rem;
+}
+
+.left {
+  width: 100%;
+}
+
+header {
+  background-color: pink;
+  height: 10vh;
+  width: 100%;
+  font-size: 3rem;
+}
+
+main {
+  font-size: 1.1rem;
+}
+
+footer {
+  background-color: yellowgreen;
+  height: 5vh;
+}

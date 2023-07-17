@@ -1,0 +1,15 @@
+<aside class="sidenav" [ngClass]="collapsed ? 'sidenav-collapsed' : ''">
+  <div class="logo-container">
+    <img src="assets/logo.png" alt="Logo" width="100px">
+    <div class="logo-text" *ngIf="collapsed">NIGERIA POLICE COLLEGE IKEJA</div>
+    <button class="btn-close" *ngIf="collapsed"></button>
+  </div>
+  <ul class="sidenav-nav">
+    <li class="sidenav-nav-item" *ngFor="let data of navData">
+      <a [routerLink]="[data.routerLink]" class="sidenav-nav-link">
+        <i [class]="data.icon"></i>
+        <span class="sidenav-link-text" *ngIf="collapsed">{{data.label}} </span>
+      </a>
+    </li>
+  </ul>
+</aside>
