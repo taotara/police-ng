@@ -1,8 +1,8 @@
-<div class="container-fluid d-flex">
-  <app-side-nav></app-side-nav> 
+<div class="d-flex">
+  <app-side-nav (onToggleSideNav)="onToggleSideNav($event)"></app-side-nav> 
   <div class="left">
     <header>Header</header>
-    <main>Main</main>
+    <app-main></app-main>
   </div> 
 </div>
 <!-- <footer class="container-fluid">Footer</footer> -->
